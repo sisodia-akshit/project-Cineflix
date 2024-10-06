@@ -1,0 +1,115 @@
+.register {
+    height: 100vh;
+    align-content: center;
+    background-color: var(--primary-color);
+}
+
+form {
+    margin: auto;
+    width: fit-content;
+    background-color: var(--secondary-color);
+    padding: 16px 32px;
+    border: 1px solid #333;
+    border-radius: 5px;
+    position: relative;
+    box-shadow: 10px 10px  #ffffff76;
+
+
+    & legend {
+        text-align: center;
+        padding-bottom: 16px;
+        font-weight: bold;
+        font-size: 32px;
+        color: var(--pText-color);
+    }
+
+    & label {
+        display:none;
+        width: 130px;
+        margin-bottom: 16px;
+
+    }
+
+    & input {
+        height: 45px;
+        width: 300px;
+        border-radius: 10px;
+        border: .5px solid #333;
+        background-color: #00000074;
+        margin-bottom: 16px;
+        font-size: 16px;
+        padding: 0 16px;
+        color: antiquewhite;
+
+
+        &::placeholder {
+            color: #ffffff76;
+        }
+
+    }
+
+    ::-ms-reveal {
+        filter: invert(100%);
+    }
+    
+
+    
+
+}
+.SignIn{
+    color: #fff;
+    display: flex;
+    margin: 24px 0 0 0;
+    justify-content: center;
+    font-size: 16px;
+
+    & a{
+        color: var(--sText-color);
+        text-decoration: none;
+        margin: 0 16px;
+    }
+}
+
+.formBtn {
+    display: flex;
+    justify-content: space-between;
+
+    & button {
+        background-color: var(--primary-color);
+        padding: 8px 16px;
+        border: none;
+        background-color: var(--pText-color);
+        color: #fff;
+        border-radius: 5px;
+        font-size: 16px;
+
+    }
+    & button:hover{
+        background-color: var(--pText-hover);
+        
+    }
+    & a{
+        font-size:16px ;
+    }
+
+}
+
+@media screen and (max-width:1200px) {
+   
+}
+
+@media screen and (max-width:950px) {
+  
+}
+
+@media screen and (max-width:750px) {
+    
+}
+
+@media screen and (max-width:575px) {
+   
+}
+
+@media screen and (max-width:480px) {
+    
+}

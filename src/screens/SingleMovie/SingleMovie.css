@@ -1,0 +1,210 @@
+
+
+.SingleMovieTopContainer {
+    position: relative;
+    height: 500px;
+    width: 100%;
+}
+
+.SingleMovieBg {
+    height: 500px;
+    width: 100%;
+    /* display: none; */
+    position: absolute;
+    z-index: -1;
+
+    & img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: top;
+    }
+
+    &::before {
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        /* z-index: 1; */
+        background: linear-gradient(0deg, var(--primary-color) 20%, rgba(0, 0, 0, 0) 150%);
+    }
+}
+
+.SingleMovieFg {
+    display: flex;
+    position: absolute;
+    z-index: 2;
+    bottom: 0;
+    margin: 2rem;
+    align-items: end;
+}
+
+.singleMoviePoster {
+    display: flex;
+/* background-color: red; */
+    & img {
+        width: 150px;
+        height: 200px;
+        box-shadow: 0 0 1px #fff;
+
+    }
+
+}
+
+.SingleMovieInfo {
+    margin: 0 5rem;
+
+    & .Title {
+        font-size: 4rem;
+        text-transform: uppercase;
+        font-family: "Love Ya Like A Sister", cursive;
+
+    }
+
+    & h2 {
+        color: rgb(22, 144, 0);
+    }
+
+    & h1 {
+        margin-top: 1rem;
+
+
+        & i {
+            font-size: 3rem;
+            color: var(--pText-color);
+        }
+    }
+
+    & p {
+        margin-top: 1rem;
+        font-size: 1.8rem;
+    }
+}
+
+.SingleMovieContainer{
+    margin-top: 3rem;
+    & .SingleMovieTop2{
+        display: flex;
+        position:relative;
+    }
+
+}
+.SingleMovieInfoBar{
+    padding: 0 1rem;
+    margin: .5rem 0;
+    & .SMovieWhereWatchBTN{
+        color: var(--pText-color);
+        border-bottom: 2px solid  var(--pText-color);
+
+    }
+    & button{
+        background-color: transparent;
+        color: antiquewhite;
+        font-size: 1.5rem;
+        border:none ;
+        padding: 1rem;
+        margin-right: 1rem;
+    }
+}
+.SMovieBtnFg{
+    display: none;
+    margin-top: 4rem;
+    & a{
+        white-space: nowrap;
+        text-decoration: none;
+        color: var(--pText-color);
+        font-size: 1.8rem;
+        font-weight: 600;
+        border: .5px solid var(--pText-color);
+        margin: 0 1rem;
+        padding: 1.5rem 2rem;
+        border-radius: 3rem;
+        &:hover{
+            background-color: var(--pText-color);
+            color: #fff;
+
+        }
+    }
+}
+.SMovieBtn{
+    position: absolute;
+    right: 0;
+    padding:0 1rem;
+    & a{
+        white-space: nowrap;
+        text-decoration: none;
+        color: var(--pText-color);
+        font-size: 1.5rem;
+        font-weight: 600;
+        border: .5px solid var(--pText-color);
+        margin-right:.8rem;
+        padding: 1rem 1.5rem;
+        border-radius: 3rem;
+        &:hover{
+            background-color: var(--pText-color);
+            color: #fff;
+        }
+    }
+}
+
+.SingleMovieLeft{
+    display: flex;
+    flex-wrap: wrap;
+    & svg{
+        margin: 0 2rem;
+    }
+}
+.SingleMovieRight{
+    display: none;
+    flex-direction: column;
+    font-size: 2rem;
+    padding: 3rem 2rem;
+    & span{
+        font-weight: 700;
+        color: var(--pText-color);
+    }
+}
+
+@media screen and (max-width:1200px) {
+    
+   
+}
+
+@media screen and (max-width:950px) {
+}
+
+@media screen and (max-width:750px) {
+    
+}
+
+@media screen and (max-width:575px) {
+    .SingleMovieFg{
+        flex-direction: column;
+    }
+    .singleMoviePoster{
+        width: 100%;
+        justify-content: center;
+        margin-bottom: 3rem;
+    }
+    .SingleMovieInfo{
+        margin: auto;
+        text-align: center;
+        font-size: 10px;
+    }
+    .SingleMovieInfoBar{
+        & button{
+            font-size: 2rem;
+        }
+    }
+    .SMovieBtn{
+      display: none;
+    }
+    .SMovieBtnFg{
+        display: block;
+    }
+    
+}
+
+@media screen and (max-width:480px) {
+    
+}

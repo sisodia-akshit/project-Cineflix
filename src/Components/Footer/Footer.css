@@ -1,0 +1,35 @@
+.footer {
+    background-color: #111;
+    text-align: center;
+    margin-top: 4rem;
+}
+
+.footerTop {
+    background-color: #0d0d0d;
+    /* border-bottom: .5px solid #fff7; */
+    padding: 1rem 0;
+}
+
+.footerText {
+    padding: 3rem 2rem;
+
+    & p {
+        font-size: 1.5rem;
+        text-align: justify;
+        margin:0 5rem ;
+        margin-bottom: 2rem;
+
+    }
+
+}
+
+.copyright {
+    padding: 1rem 0;
+    border-top: .5px solid #fff7;
+    background-color: #111;
+    color: #fff5;
+
+    & i {
+        color: #fff5;
+    }
+}

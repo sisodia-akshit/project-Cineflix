@@ -1,0 +1,69 @@
+@import url('https://fonts.googleapis.com/css2?family=Love+Ya+Like+A+Sister&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+html{
+    scroll-behavior: smooth;
+}
+:root{
+    --primary-color: #1d1a17;
+    --secondary-color:#28231c;
+    --pText-color:#fca311;
+    --pText-hover:#9b650d;
+    --sText-color:#EEDF7A;
+    --pHeader-color:#000000b1;
+}
+body{
+    background-color: var(--primary-color);
+}
+select{
+    background-color:var(--primary-color);
+    border: none;
+    color: #ffffff;
+    width: 150px;
+    margin-right:32px;
+    margin-bottom: 16px;
+    padding: 8px 8px;
+}
+textarea{
+    background-color:var(--primary-color);
+    width: 100%;
+    height: 100px;
+    padding: 10px;
+    margin-bottom: 16px;
+
+}
+
+@media screen and (max-width:1200px) {
+    html{
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width:950px) {
+    html{
+        font-size: 13px;
+    }
+}
+
+@media screen and (max-width:750px) {
+    html{
+        font-size: 10px;
+    }
+}
+
+@media screen and (max-width:575px) {
+    html{
+        font-size: 8px;
+    }
+}
+
+@media screen and (max-width:480px) {
+    html{
+        font-size: 7px;
+    }
+}

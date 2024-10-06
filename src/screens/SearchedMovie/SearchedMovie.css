@@ -1,0 +1,32 @@
+.searchedMovie{
+    padding: 3rem 2rem;
+    & h1{
+        text-align: center;
+    }
+
+
+}
+
+.searchedMovieContainer{
+    display: flex;
+    flex-wrap: wrap;
+}
+.nullResult{
+    text-align: center;
+    width: 100%;
+    font-size: 5rem;
+}
+
+.searchedMovieCard{
+    margin: 2rem 1rem;
+    &  img{
+        width: 180px;
+        height: 250px;
+    }
+    & h2 {
+        font-size: 2rem;
+        width: 200px;
+        overflow: hidden;
+    }
+    
+}
